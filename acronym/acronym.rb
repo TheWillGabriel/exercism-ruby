@@ -2,11 +2,7 @@
 
 class Acronym
   def self.abbreviate(string)
-    letters = []
-    words = string.split(/[,\- ]+/)
-    words.each do |word|
-      letters << word[0].upcase
-    end
-    letters.join("")
+    letters = string.scan(/\b[a-zA-Z]/)
+    letters.join("").upcase
   end
 end
