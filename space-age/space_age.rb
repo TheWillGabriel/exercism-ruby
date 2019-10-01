@@ -16,4 +16,32 @@ class SpaceAge
   def on_earth
     @age_in_seconds / 31_557_600
   end
+
+  def on_mercury
+    on_earth / RELATIVE_ORBITAL_PERIODS[:mercury]
+  end
+
+  def on_venus
+    on_earth / RELATIVE_ORBITAL_PERIODS[:venus]
+  end
+
+  def on_mars
+    on_earth / RELATIVE_ORBITAL_PERIODS[:mars]
+  end
+
+  def on_jupiter
+    on_earth / RELATIVE_ORBITAL_PERIODS[:jupiter]
+  end
+
+  def on_saturn
+    on_earth / RELATIVE_ORBITAL_PERIODS[:saturn]
+  end
+
+  def on_uranus
+    on_earth / RELATIVE_ORBITAL_PERIODS[:uranus]
+  end
+
+  def on_neptune
+    on_earth / RELATIVE_ORBITAL_PERIODS[:neptune]
+  end
 end
