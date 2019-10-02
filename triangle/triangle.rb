@@ -16,4 +16,8 @@ class Triangle
   def isosceles?
     triangle? && (@sides.count(@sides[0]) > 1 || @sides.count(@sides[1]) > 1)
   end
+
+  def scalene?
+    triangle? && !isosceles?
+  end
 end
