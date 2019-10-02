@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Matrix
   attr_reader :rows
   attr_reader :columns
