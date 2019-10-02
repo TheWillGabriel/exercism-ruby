@@ -20,4 +20,8 @@ class Triangle
   def scalene?
     triangle? && !isosceles?
   end
+
+  def degenerate?
+    triangle? && @sides.max == @sides.sort.first(2).sum
+  end
 end
