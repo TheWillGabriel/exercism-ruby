@@ -1,7 +1,11 @@
 class Triangle
   def initialize(sides)
-    @side_a = sides[0]
-    @side_b = sides[1]
-    @side_c = sides[2]
+    @sides = sides
+  end
+
+  def equilateral?
+    return false if @sides.any?(0)
+
+    @sides.all?(@sides[0])
   end
 end
