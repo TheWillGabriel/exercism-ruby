@@ -1,5 +1,7 @@
 class Matrix
+  attr_reader :rows
+
   def initialize(string)
-    @matrix = string.split("\n").map(&:split)
+    @rows = string.split("\n").map { |row| row.split.map(&:to_i) }
   end
 end
